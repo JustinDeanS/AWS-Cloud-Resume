@@ -27,7 +27,7 @@
                         <a href="#skills" class="nav-item nav-link text-white-50 font-os font-size-16 active">Skills</a>
                         <a href="#awards" class="nav-item nav-link text-white-50 font-os font-size-16 active">Achievements</a>
                         <a href="#portfolio" class="nav-item nav-link text-white-50 font-os font-size-16 active">Projects</a>
-                        <a href="https://weatherapp.techwithjustin.net" class="nav-item nav-link text-white-50 font-os font-size-16 active">Weather App</a>
+                        <a href="https://weatherapp.techwithjustin.net" class="nav-item nav-link text-white-50 font-os font-size-16 active">Weather App 🌤️</a>
                         <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't read the counter</div>
                     </div>
                 </nav>
@@ -148,78 +148,252 @@
                     <div class="py-3">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">Projects</h5>
                         <h1 class="text-uppercase font-staat font-size-34">Creative Work</h1>
-                        <br>
-                        <h5 class="t-size-10 text-muted">Cloud Resume Challenge</h5>
-                        <p class="font-ram text-black-50 py-2">
-                            This website you are looking at is an end product of the <a href="https://cloudresumechallenge.dev/">Cloud Resume Challenge</a>. The project tasks participants with creating a serverless website using HTML and CSS, which is automatically deployed to an S3 bucket and Cloudfront CDN through a CI/CD pipeline. This pipeline, operating on GitHub Actions, automates backend setup with AWS SAM/CloudFormation and integrates Python unit tests. Additionally, it involves setting up a REST API via AWS API Gateway, powered by AWS Lambda (Python), to manage updates to a DynamoDB table.
-                            <br>
-                            <br>
-                            Technologies Utilized: AWS S3, Route53, Certificates Manager, CloudFront, API Gateway, Lambda, DynamoDB, AWS SAM, CloudFormation, git, GitHub, GitHub Actions, Python (Boto3), HTML, CSS, W3, JavaScript.
-                            <br>
-                            <br>
-                            <a href="https://github.com/JustinDeanS/AWS-Cloud-Resume">Cloud Resume Challenge GitHub Repository</a>
-                        </p>
-                        <br>
-                        <h5 class="t-size-10 text-muted">Geek Text API</h5>
-                        <p class="font-ram text-black-50 py-2">
-                            This project was about the creation of a Rest API using Scrum methodology to support an online web application bookstore. Throughout this project, I learned the benefits of using Scrum methodology to complete this semester-long project.
-                            <br>
-                            <br>
-                            Technologies Utilized: JavaScript, Postman, GitHub, git, MongoDB, JSON, Teamwork, Agile Methodologies, Scrum.
-                            <br>
-                            <br>
-                            <a href="https://github.com/JustinDeanS/Geek-Text-API">Geek Text API GitHub Repository</a>
-                        </p>
-                        <br>
-                        <h5 class="t-size-10 text-muted">Password Security Check Tool</h5>
-                        <p class="font-ram text-black-50 py-2">
-                            This project focuses on developing a command-line tool that helps users verify if their passwords have been exposed in any data breaches. Utilizing the "Have I Been Pwned" API, the tool employs SHA-1 hashing to safely check passwords without revealing the actual password to external networks.
-                            <br>
-                            <br>
-                            Technologies Utilized: Python, Requests Library, Hashlib, Git, GitHub, Command Line Interface (CLI), Have I Been Pwned API.
-                            <br>
-                            <br>
-                            <a href="https://github.com/JustinDeanS/PasswordChecker">Password Security Check Tool GitHub Repository</a>
-                        </p>
-                        <br>
-                        <h5 class="t-size-10 text-muted">Hacker News Data Scraper</h5>
-                        <p class="font-ram text-black-50 py-2">
-                            This project involves developing a Python script that automates the scraping of news stories from the first two pages of Hacker News. The script specifically outputs posts that have over 99 votes. This tool is designed for those who wish to quickly access the top posts without navigating through the site manually.
-                            <br>
-                            <br>
-                            Technologies Utilized: Python, Requests Library, BeautifulSoup, Git, GitHub, Command Line Interface (CLI).
-                            <br>
-                            <br>
-                            <a href="https://github.com/JustinDeanS/Hacker-News">Hacker News Data Scraper GitHub Repository</a>
-                        </p>
-                        <br>
-                        <h5 class="t-size-10 text-muted">Image Classification with ImageAI</h5>
-                        <p class="font-ram text-black-50 py-2">
-                            This project involves creating a Python script for image classification using the ImageAI library. The script leverages the DenseNet121 model to accurately classify images and provide the top predictions with their respective probabilities. This project showcases the integration of pre-trained deep learning models into a Python application, highlighting the ease of use and effectiveness of the ImageAI library for computer vision tasks.
-                            <br>
-                            <br>
-                            Technologies Utilized: Python, ImageAI, OpenCV, GitHub, git, Command Line Interface (CLI).
-                            <br>
-                            <br>
-                            <a href="https://github.com/JustinDeanS/FastImageAI">Image Classification with ImageAI GitHub Repository</a>
-                        </p>
-                        <br>
-                        <h5 class="t-size-10 text-muted">Weather App</h5>
-                        <p class="font-ram text-black-50 py-2">
-                            This project involves creating a weather application using React that displays current weather data for any city. The app utilizes the OpenWeather API to fetch and display weather information, including temperature, humidity, and wind speed.
-                            <br>
-                            <br>
-                            Technologies Utilized: React, Axios, OpenWeather API, AWS S3, CloudFront, Route 53.
-                            <br>
-                            <br>
-                            <a href="https://github.com/JustinDeanS/WeatherApp">Weather App GitHub Repository</a>
-                            <br>
-                            <br>
-                            <a href="https://weatherapp.techwithjustin.net">Live Weather App</a>
-                        </p>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal1">
+                                    <img src="multicloud-bundle.gif" class="card-img-top" alt="Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cloud Resume Challenge</h5>
+                                        <p class="card-text">
+                                            This website you are looking at is an end product of the Cloud Resume Challenge.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/AWS-Cloud-Resume" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal2">
+                                    <img src="rest.png"card-img-top" alt="Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Geek Text API</h5>
+                                        <p class="card-text">
+                                            This project was about the creation of a Rest API using Scrum methodology.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/Geek-Text-API" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal3">
+                                    <img src="password.jpg" class="card-img-top" alt="Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Password Security Check Tool</h5>
+                                        <p class="card-text">
+                                            This project focuses on developing a command-line tool to verify password security.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/PasswordChecker" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal4">
+                                    <img src="data.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hacker News Data Scraper</h5>
+                                        <p class="card-text">
+                                            This project involves developing a Python script to scrape news stories from Hacker News.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/Hacker-News" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal5">
+                                    <img src="image-classification.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Image Classification with ImageAI</h5>
+                                        <p class="card-text">
+                                            This project involves creating a Python script for image classification using the ImageAI library.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/FastImageAI" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal6">
+                                    <img src="weather.jpg" class="card-img-top" alt="Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Weather App</h5>
+                                        <p class="card-text">
+                                            This project involves creating a weather application using React that displays current weather data.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/WeatherApp" class="card-link">GitHub Repository</a>
+                                            <br>
+                                            <a href="https://weatherapp.techwithjustin.net" class="card-link">Live Weather App</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- End Work area -->
+
+                <!-- Modals -->
+                <!-- Cloud Resume Challenge Modal -->
+                <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel1">Cloud Resume Challenge</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This website you are looking at is an end product of the <a href="https://cloudresumechallenge.dev/">Cloud Resume Challenge</a>. The project tasks participants with creating a serverless website using HTML and CSS, which is automatically deployed to an S3 bucket and Cloudfront CDN through a CI/CD pipeline. This pipeline, operating on GitHub Actions, automates backend setup with AWS SAM/CloudFormation and integrates Python unit tests. Additionally, it involves setting up a REST API via AWS API Gateway, powered by AWS Lambda (Python), to manage updates to a DynamoDB table.
+                                    <br>
+                                    <br>
+                                    Technologies Utilized: AWS S3, Route53, Certificates Manager, CloudFront, API Gateway, Lambda, DynamoDB, AWS SAM, CloudFormation, git, GitHub, GitHub Actions, Python (Boto3), HTML, CSS, W3, JavaScript.
+                                </p>
+                                <a href="https://github.com/JustinDeanS/AWS-Cloud-Resume" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Geek Text API Modal -->
+                <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel2">Geek Text API</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This project was about the creation of a Rest API using Scrum methodology to support an online web application bookstore. Throughout this project, I learned the benefits of using Scrum methodology to complete this semester-long project.
+                                    <br>
+                                    <br>
+                                    Technologies Utilized: JavaScript, Postman, GitHub, git, MongoDB, JSON, Teamwork, Agile Methodologies, Scrum.
+                                </p>
+                                <a href="https://github.com/JustinDeanS/Geek-Text-API" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Password Security Check Tool Modal -->
+                <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel3">Password Security Check Tool</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This project focuses on developing a command-line tool that helps users verify if their passwords have been exposed in any data breaches. Utilizing the "Have I Been Pwned" API, the tool employs SHA-1 hashing to safely check passwords without revealing the actual password to external networks.
+                                    <br>
+                                    <br>
+                                    Technologies Utilized: Python, Requests Library, Hashlib, Git, GitHub, Command Line Interface (CLI), Have I Been Pwned API.
+                                </p>
+                                <a href="https://github.com/JustinDeanS/PasswordChecker" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hacker News Data Scraper Modal -->
+                <div class="modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel4">Hacker News Data Scraper</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This project involves developing a Python script that automates the scraping of news stories from the first two pages of Hacker News. The script specifically outputs posts that have over 99 votes. This tool is designed for those who wish to quickly access the top posts without navigating through the site manually.
+                                    <br>
+                                    <br>
+                                    Technologies Utilized: Python, Requests Library, BeautifulSoup, Git, GitHub, Command Line Interface (CLI).
+                                </p>
+                                <a href="https://github.com/JustinDeanS/Hacker-News" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Classification with ImageAI Modal -->
+                <div class="modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel5" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel5">Image Classification with ImageAI</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This project involves creating a Python script for image classification using the ImageAI library. The script leverages the DenseNet121 model to accurately classify images and provide the top predictions with their respective probabilities. This project showcases the integration of pre-trained deep learning models into a Python application, highlighting the ease of use and effectiveness of the ImageAI library for computer vision tasks.
+                                    <br>
+                                    <br>
+                                    Technologies Utilized: Python, ImageAI, OpenCV, GitHub, git, Command Line Interface (CLI).
+                                </p>
+                                <a href="https://github.com/JustinDeanS/FastImageAI" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather App Modal -->
+                <div class="modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel6" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel6">Weather App</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This project involves creating a weather application using React that displays current weather data for any city. The app utilizes the OpenWeather API to fetch and display weather information, including temperature, humidity, and wind speed.
+                                    <br>
+                                    <br>
+                                    Technologies Utilized: React, Axios, OpenWeather API, AWS S3, CloudFront, Route 53.
+                                </p>
+                                <a href="https://github.com/JustinDeanS/WeatherApp" class="card-link">GitHub Repository</a>
+                                <br>
+                                <a href="https://weatherapp.techwithjustin.net" class="card-link">Live Weather App</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modals -->
+
 
                 <!-- Footer -->
                 <footer id="footer" class="pt-5 px-3">
