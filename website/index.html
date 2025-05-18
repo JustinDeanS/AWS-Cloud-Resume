@@ -42,7 +42,7 @@
             <div class="col-md-9 offset-md-3 px-0">
 
                 <!-- Site-banner area -->
-                <section class="site-banner bg-light" id="home">
+                <section class="site-banner bg-light fade-in-section" id="home">
                     <div class="banner-area">
                         <div class="author text-center">
                             <div class="author-img"></div>
@@ -54,7 +54,7 @@
                 <!-- End Site-banner area -->
 
                 <!-- About me area -->
-                <section class="about px-4 my-5" id="about_me">
+                <section class="about px-4 my-5 fade-in-section" id="about_me">
                     <div class="me py-5">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">Information</h5>
                         <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
@@ -85,7 +85,7 @@
                 <!-- End About me area -->
 
                 <!-- Skills area -->
-                <section class="skill px-4 py-5 bg-light" id="skills">
+                <section class="skill px-4 py-5 bg-light fade-in-section" id="skills">
                     <div class="ability py-3">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">Ability</h5>
                         <h1 class="text-uppercase font-staat font-size-34">My skills</h1>
@@ -119,7 +119,7 @@
                 <!-- End Skills area -->
 
                 <!-- Awards area -->
-                <section class="awards px-4 py-5" id="awards">
+                <section class="awards px-4 py-5 fade-in-section" id="awards">
                     <div class="do py-5">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">What I have achieved</h5>
                         <h1 class="text-uppercase font-staat font-size-34"><i class="fas fa-award"></i> Awards &amp; Certifications</h1>
@@ -146,7 +146,7 @@
                 <!-- End Awards area -->
 
                 <!-- Work area -->
-                <section class="work py-5 px-4 bg-light" id="portfolio">
+                <section class="work py-5 px-4 bg-light fade-in-section" id="portfolio">
                     <div class="py-3">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">Projects</h5>
                         <h1 class="text-uppercase font-staat font-size-34">Creative Work</h1>
@@ -266,6 +266,45 @@
                                             This project is a Slot Machine game developed in Python, allowing users to place bets, spin the machine, and win based on matching symbols.
                                             <br>
                                             <a href="https://github.com/JustinDeanS/Slot-Machine" target="_blank" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal10">
+                                    <img src="assets/osrs-hiscore.png" class="card-img-top" alt="osrs-hiscore Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">osrs-hiscore</h5>
+                                        <p class="card-text">
+                                            A polished CLI tool for fetching OldSchool RuneScape hiscores with colored tables, XP calculations, ASCII sparklines, and JSON/CSV export.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/osrs-hiscore" target="_blank" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal11">
+                                    <img src="assets/transcript-extractor.png" class="card-img-top" alt="YouTube Transcript Extractor Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">YouTube Transcript Extractor</h5>
+                                        <p class="card-text">
+                                            A lightweight Chrome extension to extract and download YouTube video transcripts with one click.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/youtube-transcript-extractor" target="_blank" class="card-link">GitHub Repository</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card project-card" data-toggle="modal" data-target="#projectModal12">
+                                    <img src="assets/clipboard-history.png" class="card-img-top" alt="Clipboard History Extension Project Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Clipboard History Extension</h5>
+                                        <p class="card-text">
+                                            A privacy-focused Chrome extension to save and manage recently copied text.
+                                            <br>
+                                            <a href="https://github.com/JustinDeanS/clipboard-history-extension" target="_blank" class="card-link">GitHub Repository</a>
                                         </p>
                                     </div>
                                 </div>
@@ -511,13 +550,105 @@
                         </div>
                     </div>
                 </div>
+                <!-- osrs-hiscore Modal -->
+                <div class="modal fade" id="projectModal10" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel10" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel10">osrs-hiscore</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <strong>osrs-hiscore</strong> is a simple, polished CLI tool for fetching OldSchool RuneScape hiscores (Regular, Ironman, Hardcore Ironman, Ultimate Ironman).<br>
+                                    <br>
+                                    <strong>Features:</strong>
+                                    <ul>
+                                        <li>Auto-detects account mode (Regular/Ironman/Hardcore/Ultimate)</li>
+                                        <li>Rich colored tables for stats</li>
+                                        <li>XP-to-next-level and 200M calculations</li>
+                                        <li>ASCII sparklines for XP distribution</li>
+                                        <li>Export to JSON/CSV</li>
+                                        <li>Easy install via PyPI or GitHub</li>
+                                    </ul>
+                                    <strong>Technologies Utilized:</strong> Python, Rich, CLI, GitHub, PyPI
+                                </p>
+                                <a href="https://github.com/JustinDeanS/osrs-hiscore" target="_blank" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- YouTube Transcript Extractor Modal -->
+                <div class="modal fade" id="projectModal11" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel11" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel11">YouTube Transcript Extractor</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <strong>YouTube Transcript Extractor</strong> is a lightweight Chrome extension that extracts and downloads transcripts from YouTube videos with captions. Built for students, researchers, content creators, and anyone who needs clean, fast access to video text.
+                                </p>
+                                <strong>Features:</strong>
+                                <ul>
+                                    <li>🔍 Automatically detects and extracts video transcripts (when available)</li>
+                                    <li>💾 One-click download as a <code>.txt</code> file</li>
+                                    <li>🧭 Works entirely in your browser — no sign-in or tracking</li>
+                                    <li>🖼️ Clean, responsive popup UI</li>
+                                    <li>🛡️ 100% privacy-first — no data ever leaves your browser</li>
+                                </ul>
+                                <a href="https://github.com/JustinDeanS/youtube-transcript-extractor" target="_blank" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Clipboard History Extension Modal -->
+                <div class="modal fade" id="projectModal12" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel12" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel12">Clipboard History Extension</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <strong>Clipboard History Extension</strong> is a privacy-focused Chrome extension to save and manage recently copied text. View, reuse, and delete clipboard entries directly from your browser.
+                                </p>
+                                <strong>Features:</strong>
+                                <ul>
+                                    <li>Save selected text from any tab</li>
+                                    <li>View and re-copy from clipboard history</li>
+                                    <li>Delete old entries (max 20)</li>
+                                    <li>No sign-in, no tracking — all data stays local</li>
+                                </ul>
+                                <a href="https://github.com/JustinDeanS/clipboard-history-extension" target="_blank" class="card-link">GitHub Repository</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- End Modals -->
 
 
                 <!-- Footer -->
                 <footer id="footer" class="pt-5 px-3">
                     <div id="contact_us">
-                        <div class="row bg-light py-5">
+                        <div class="row py-5">
                             <div class="col-sm-4 my-5 text-center">
                                 <h6 class="font-ram font-size-16 text-black-50">&copy;2024 Justin. All rights reserved.</h6>
                             </div>
@@ -540,6 +671,11 @@
         </div>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:9999;background:#6C63FF;color:#fff;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 2px 8px rgba(44,62,80,0.12);font-size:2rem;cursor:pointer;transition:background 0.2s,transform 0.2s;">
+      &uarr;
+    </button>
+
     <!-- External Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -548,6 +684,21 @@
     <script src="./vendor/typed/typed.min.js"></script>
     <script src="./index.js"></script>
     <!-- End External Scripts -->
+
+    <script>
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+    </script>
 
 </body>
 
